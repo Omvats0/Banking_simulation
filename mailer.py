@@ -2,8 +2,8 @@
 import gmail
 
 #credentials
-email="oms87742@gmail.com"
-app_pass="hroo uyep iwwe airb"
+email=""    #Mention your Email id
+app_pass="" #Mention yoyr app password
 
 def send_openacn_email(uemail,uacn,upass,uname):
     con=gmail.GMail(email,app_pass)
@@ -52,4 +52,5 @@ ABC Bank
 Ghaziabad,UP,India
 '''
     msg=gmail.Message(to=uemail,subject="Passwword Recovery",text=text_msg)
+
     con.send(msg)
